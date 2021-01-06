@@ -1,13 +1,10 @@
 <view>
-<swiper indicator-dots="{{true}}" autoplay="{{true}}" style="width:750rpx">
-    <swiper-item >
-        <image src="https://picsum.photos/200"></image>
-    </swiper-item>>
-        <swiper-item >
-        <image src="https://picsum.photos/250"></image>
-    </swiper-item>>
-        <swiper-item >
-        <image src="https://picsum.photos/300"></image>
-    </swiper-item>>
-</swiper>
+  <text class="title">hello {{name}}</text>
+  <button open-type="getUserInfo" bind:getuserinfo="buttonHandler">
+    授权获取用户个人信息
+  </button>
+  <text class="title">这是首页</text>
+  <navigator url="../second/second">前往第二页
+  </navigator>
+  <button bind:tap="buttonHandler">qu第二页</button>
 </view>
